@@ -6,46 +6,72 @@
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>PlainSvent-ventures</title>
+    <style>
+      .hide {
+          display: none; 
+      }
+  </style>
+  <script src="./src/js/modal.js" defer></script>
 </head>
 <body>
     <!-- первая секция -->
     <section class="main-section bgc">
-        <div class="main-section__nav-container container">
-            <img src="./src/icons/logo.png" alt="" class="main-section__logo">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <div class="nav-item__circle-one circle"></div>
-                        <a class="nav-link active" aria-current="page" href="#"><p class="navbar__text">About</p></a>
+      <div class="main-section__nav-container container">
+        <img src="./src/icons/logo.png" alt="" class="main-section__logo">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./src/icons/Vector.png" alt="" class="navbar-toggler-icon__img">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li class="dropdown-item">
+                        <div class="dropdown-item__circle-one circle"></div>
+                        <a class="nav-link active" aria-current="page" href="https://inheeen.github.io/about-page/"><p class="navbar__text">About</p></a>
                       </li>
-                      <li class="nav-item">
-                        <div class="nav-item__circle-two circle"></div>
-                        <a class="nav-link" href="#"><p class="navbar__text-active">Ventures</p></a>
+                      <li class="dropdown-item">
+                        <div class="dropdown-item__circle-two circle"></div>
+                        <a class="nav-link" href="https://inheeen.github.io/ventures-pages/"><p class="navbar__text">Ventures</p></a>
                       </li>
-                      <li class="nav-item">
-                        <div class="nav-item__circle-three circle"></div>
-                        <a class="nav-link" href="#"><p class="navbar__text">Tools</p></a>
+                      <li class="dropdown-item">
+                        <div class="dropdown-item__circle-three circle"></div>
+                        <a class="nav-link" href="https://inheeen.github.io/tools-page/"><p class="navbar__text">Tools</p></a>
                       </li>
-                      <li class="nav-item">
-                        <div class="nav-item__circle-four circle"></div>
-                        <a class="nav-link" href="#"><p class="navbar__text">Notepad</p></a>
+                      <li class="dropdown-item">
+                        <div class="dropdown-item__circle-four circle"></div>
+                        <a class="nav-link" href="https://inheeen.github.io/notepad-page/"><p class="navbar__text">Notepad</p></a>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-                <button class="cart-container__btn second-btn">
-                  <a href="#" class="cart-container__link">
-                    <p class="cart-container__text">Connect</p>
-                  </a>
-                </button>
-              </nav>
-              
-        </div>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" >
+                <ul class="navbar-nav">
+                  <li class="dropdown-item">
+                    <div class="dropdown-item__circle-one circle"></div>
+                    <a class="nav-link active" aria-current="page" href="https://inheeen.github.io/about-page/"><p class="navbar__text">About</p></a>
+                  </li>
+                  <li class="dropdown-item">
+                    <div class="dropdown-item__circle-two circle"></div>
+                    <a class="nav-link" href="https://inheeen.github.io/ventures-pages/"><p class="navbar__text">Ventures</p></a>
+                  </li>
+                  <li class="dropdown-item">
+                    <div class="dropdown-item__circle-three circle"></div>
+                    <a class="nav-link" href="#https://inheeen.github.io/tools-page/"><p class="navbar__text">Tools</p></a>
+                  </li>
+                  <li class="dropdown-item">
+                    <div class="dropdown-item__circle-four circle"></div>
+                    <a class="nav-link" href="https://inheeen.github.io/notepad-page/"><p class="navbar__text">Notepad</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="cart-container__btn second-btn">
+              <a href="#" class="cart-container__link">
+                <p class="cart-container__text">Connect</p>
+              </a>
+            </button>
+          </nav>
+    </div>
         <div class="main-section__content-container container">
             <img src="./src/img/1.png" alt="" class="main-section__img">
             <h1 class="main-section__title">Our ventures</h1>
@@ -89,7 +115,7 @@
                     <p class="tarif-box__name">Pano</p>
                     <p class="tarif-box__text">Get a tailored snapshot of a customer in seconds</p>
                     <div class="tarif-box__stage-beta"><p class="tarif-box__stage">Beta</p></div>
-                    <p class="tarif-box__text">Customers, Team, CX</p>
+                    <p class="tarif-box__text tags">Customers, Team, CX</p>
                     <button class="tarif-box__btn"><a href="" class="tarif-box__link"><img src="./src/img/div.section.png" alt="" class="tarif-box__link-img"></a></button>
                 </div>
                 <div class="tarif-box__line line"></div>
@@ -98,7 +124,7 @@
                     <p class="tarif-box__name">Stop</p>
                     <p class="tarif-box__text">Tell sales emails to just stop</p>
                     <div class="tarif-box__stage-growth"><p class="tarif-box__stage">Growth</p></div>
-                    <p class="tarif-box__text">Personal, Email, Spam Blocker</p>
+                    <p class="tarif-box__text tags">Personal, Email, Spam Blocker</p>
                     <button class="tarif-box__btn"><a href="" class="tarif-box__link"><img src="./src/img/div.section.png" alt="" class="tarif-box__link-img"></a></button>
                 </div>
                 <div class="tarif-box__line line"></div>
@@ -107,7 +133,7 @@
                     <p class="tarif-box__name">Sweep</p>
                     <p class="tarif-box__text">You’re wasting email marketing dollars</p>
                     <div class="tarif-box__stage-alpha"><p class="tarif-box__stage">Growth</p></div>
-                    <p class="tarif-box__text">Marketing, Email, Team</p>
+                    <p class="tarif-box__text tags">Marketing, Email, Team</p>
                     <button class="tarif-box__btn"><a href="" class="tarif-box__link"><img src="./src/img/div.section.png" alt="" class="tarif-box__link-img"></a></button>
                 </div>
                 <div class="tarif-box__line line"></div>
@@ -129,7 +155,7 @@
     <!-- третья секция -->
     <section class="third-section bgc">
         <div class="third-section__content-container container">
-            <div class="third-section__form-box form-box">
+            <div class="third-section__form-box form-box container">
                 <div class="third-section__title-box">
                     <p class="third-section__title">Got an idea?</p>
                     <p class="third-section__text">We’re looking for people who have an idea of their own or are looking to help us launch great ideas. Whether you want to solve the problem yourself or are just looking for a new solution, we’d love for you to join us.</p>
@@ -210,8 +236,7 @@
             <button class="four-section__btn button">Still have questions?</button>
         </div>
     </section>
-
-
+    <!-- подвал -->
     <footer class="footer bgc">
         <div class="footer__content-container container">
           <div class="footer__first-section">
@@ -241,7 +266,7 @@
           <div class="footer__line container line"></div>
           <div class="footer__second-section">
             <p class="footer__text footer__second-text">Got a great idea but need help building it?</p>
-            <button class="footer__btn second-btn">Get in touch</button>
+            <button class="footer__btn second-btn" id="open-modal-btn">Get in touch</button>
           </div>
           <div class="footer__line container line"></div>
           <div class="footer__third-section">
@@ -271,6 +296,35 @@
           </div>
         </div>
     </footer>
+    <!-- Модальное окно -->
+    <div id="my-modal" class="modal">
+      <div class="modal__box">
+        <div class="modal-box__head">
+          <button id="close-my-modal-btn" class="modal-box__btn">
+            <img src="./src/icons/modal-close.png" alt="">
+          </button>
+        </div>
+        <div class="modal-box__body">
+          <p class="modal-box__title">Got an idea?</p>
+          <p class="modal-box__text">We’re looking for people who have an idea of their own or are looking to help us launch great ideas. Whether you want to solve the problem yourself or are just looking for a new solution, we’d love for you to join us.</p>
+          <form action="send.php" class="formi-box__first-group" method="post">
+            <div class="first-form__box box-formi">
+                <label for="first-form" class="formi-box__label">First name*</label>
+                <input id="first-form" type="text" class="formi-box__input" name="fio" placeholder="First name" required>
+            </div>
+            <div class="second-form__box box-formi">
+                <label for="second-form" class="formi-box__label">Last name*</label>
+                <input id="second-form" type="text" class="formi-box__input" name="fio" placeholder="Last name" required>
+            </div>
+            <div class="third-form__box box-formi">
+                <label for="third-form" class="formi-box__label">Email address*</label>
+                <input id="third-form" type="email" class="formi-box__input" name="email" placeholder="E-mail" required>
+            </div>
+            <input type="submit" class="formi-box__btn" value="Get in touch">
+          </form>
+        </div>
+      </div>
+  </div>
     <script defer src="./src/js/index.js"></script>
     <script src="./src/js/bootstrap.bundle.min.js"></script>
 </body>

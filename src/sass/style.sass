@@ -10,9 +10,38 @@
     font-family: "wes"
     src: url("../fonts/copperplate-gothic-bold2.ttf")
 $black: #2E2E2E
+$light: rgba(46, 46, 46, 0.5)
 
 body
     background-color: #F0E6E6
+
+.navbar
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center
+    height: 54px
+.navbar-toggler
+    padding: 0px
+.container-fluid
+    padding-top: 14px
+.dropdown-toggle::after
+    display: none
+.dropdown-item
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-right: 40px
+    &__circle-one
+        background-color: #009959
+    &__circle-two
+        background-color: #C10000
+    &__circle-three
+        background-color: #0050EA
+    &__circle-four
+        background-color: #F5ED56
+    &:hover
+        background-color: transparent
 .container
     max-width: 1140px
     margin: 0 auto
@@ -149,6 +178,8 @@ body
         margin-top: 96px
         border-radius: 4px
         margin-bottom: 86px
+
+
 
 .tarif-box
     &__title-box
@@ -427,3 +458,181 @@ body
         margin-right: 16px
         margin-bottom: 0px
 
+.modal 
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  justify-content: center
+  align-items: center
+  &.open 
+    display: flex
+  
+.modal__box 
+    background-color: #fff
+    padding: 20px
+    border-radius: 8px
+    width: 300px
+    text-align: center
+
+.modal-box
+    &__head
+        display: flex
+        justify-content: flex-end
+        margin-bottom: 10px
+    &__btn
+        border: none
+        background-color: transparent
+    &__title
+        font-family: "intel"
+        text-transform: uppercase
+        font-size: 20px
+        margin-bottom: 10px
+    &__text
+        font-family: "display"
+        font-size: 16px
+        margin-bottom: 20px
+.box-formi
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 12px
+.formi-box
+    &__first-group
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__label
+        font-family: "display"
+        margin-bottom: 4px
+        font-size: 12px
+        color: $light
+    &__btn
+        width: 115px
+        height: 26px
+        border: 1px solid $light
+        border-radius: 100px
+        background-color: transparent
+        font-family: "display"
+        font-size: 16px
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+    .tarif-box
+        &__name
+            font-size: 26px
+        &__text
+            max-width: 200px
+        &__tagline-text
+            max-width: 246px
+    .form-box
+        &__input
+            max-width: 270px
+        &__big-input 
+            max-width: 564px
+    .container-fluid
+        padding: 0px
+
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+    .main-section
+        &__content-container
+            min-height: 440px
+        &__text
+            margin-bottom: 0px
+    .second-section
+        &__btn-box
+            margin-bottom: 80px
+    .tarif-box
+        &__name
+            font-size: 22px
+        &__text 
+            max-width: 120px
+        &__title-text
+            max-width: 110px
+        &__tagline-text
+            max-width: 150px
+        &__tags-text
+            max-width: 170px
+    .orange
+        flex-direction: column
+        align-items: center
+        &__title
+            text-align: center
+            padding-top: 30px
+        &__text
+            text-align: center
+        &__right-wrapper 
+            margin-bottom: 20px
+    .form-box
+        min-height: 1400px
+        &__first-group 
+            display: flex
+            flex-direction: column
+        &__input
+            max-width: 350px
+        &__big-input
+            max-width: 350px
+    
+@media (max-width: 575px)
+    .container
+        width: 100%
+        padding: 15px
+    .main-section
+        &__title
+            text-align: center
+    .tarif-box
+        display: none
+    .orange
+        &__text
+            margin-bottom: 20px
+    .second-section
+        &__btn-box
+            margin-bottom: 0px
+        &__orange-box
+            min-height: 350px
+    .form-box
+        min-height: 1550px
+        &__input
+            max-width: 200px
+        &__big-input
+            max-width: 200px
+    .four-section
+        &__title
+            text-align: center
+
+    .footer
+        &__first-section 
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(4, 1fr);
+            justify-items: center
+            margin-bottom: 60px
+            justify-items: start
+        &__text-box
+            margin-bottom: 10px
+        &__big-img
+            width: 100%
+            padding-left: 10px
+            padding-right: 10px
+        &__four-section
+            flex-direction: column
+        &__social-box
+            flex-direction: column
+            align-items: center
+        &__networks
+            margin-right: 0px
+            margin-bottom: 10px
+        &__third-text
+            margin-bottom: 10px
+            margin-right: 0px
+        &__second-text 
+            margin-bottom: 10px
+        &__third-section
+            display: none 
