@@ -646,6 +646,10 @@ body {
   margin-bottom: 86px;
 }
 
+.orange__second-btn {
+  color: #2E2E2E;
+}
+
 .tarif-box__title-box {
   display: flex;
   flex-direction: row;
@@ -875,6 +879,7 @@ body {
   height: 52px;
   background-color: transparent;
   border: 1px solid #2E2E2E;
+  color: #2E2E2E;
 }
 
 .box-form {
@@ -900,6 +905,7 @@ body {
   background-color: transparent;
   border: 1px solid #2E2E2E;
   margin-bottom: 80px;
+  color: .four-section__btn #2E2E2E;
 }
 
 .accordion-button {
