@@ -905,7 +905,10 @@ body {
   background-color: transparent;
   border: 1px solid #2E2E2E;
   margin-bottom: 80px;
-  color: .four-section__btn #2E2E2E;
+}
+
+.four-section__btn-text {
+  color: #2E2E2E;
 }
 
 .accordion-button {
@@ -983,6 +986,7 @@ body {
   width: 145px;
   height: 46px;
   background-color: #FEFEFE;
+  color: #2E2E2E;
 }
 
 .footer__big-text {
